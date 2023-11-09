@@ -1,0 +1,22 @@
+.movie-card {
+    background-color: #34363c;
+    color: white;
+    max-width: 19%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 1vmin;
+    padding: 0;
+    transition: 0.3s;
+    border-radius: 1vmin;
+}
+
+.movie-card img {
+    max-width: 100%;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.card-container {
+    padding: 2vmin;
+}
