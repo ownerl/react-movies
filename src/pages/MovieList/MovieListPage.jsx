@@ -1,5 +1,13 @@
+import { movies } from "../../data";
+import MovieCard from "../../components/MovieCard/MovieCard";
+
 export default function MovieListPage() {
+    const movieList = movies.map((m, idx) => (
+        <MovieCard posterPath={m.posterPath} title={m.title} releaseDate={m.releaseDate}/>
+    ))
     return (
-        <h1>movie list</h1>
+        <main>
+            {movieList}
+        </main>
     )
 }
