@@ -1,0 +1,21 @@
+.navbar {
+    background-color: #34363c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vmin;
+}
+
+.nav-link {
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 8vmin 0 8vmin;
+    color: white;
+    transition: 0.1s;
+}
+
+.nav-link:hover {
+    transform: scale(1.2);
+}

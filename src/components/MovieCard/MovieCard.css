@@ -11,6 +11,8 @@
 
 .movie-card img {
     max-width: 100%;
+    border-top-left-radius: 1vmin;
+    border-top-right-radius: 1vmin;
 }
 
 .movie-card:hover {
