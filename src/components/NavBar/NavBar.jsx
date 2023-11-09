@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import "./NavBar.css";
+import "./NavBar.css"
 
 export default function NavBar() {
     return (
@@ -7,8 +7,6 @@ export default function NavBar() {
             <Link className="nav-link" to="/actors">Actors</Link>
             &nbsp;
             <Link className="nav-link" to="/movies">Movies</Link>
-            &nbsp;
-            <Link className="nav-link" to="/movies/details">Movie Details</Link>
         </nav>
     )
 }
