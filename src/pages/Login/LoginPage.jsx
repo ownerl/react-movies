@@ -1,5 +1,26 @@
-export default function Login() {
+import { useState } from "react";
+
+export default function LoginPage({setUser}) {
+    const [formState, setFormState] = useState({
+        username: "",
+    })
+    function handleChange(evt) {
+        setFormState({
+            username: evt.target.value,
+        });
+    }
+    function handleSubmit(evt) {
+        evt.preventDefault();
+        setUser(formState.username)
+    }
     return (
-        <h1>test loggin in</h1>
+        <main>
+            <form autoComplete="off" onSubmit={handleSubmit}>
+                <label htmlFor="username">Username: </label>
+                <input value={formState.username} onChange={handleChange} type="text" name="username" id="username" required/>
+                &nbsp;
+                <button type="submit">Login</button>
+            </form>
+        </main>
     )
 }
