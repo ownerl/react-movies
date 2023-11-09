@@ -2,12 +2,25 @@ import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import LoginPage from '../Login/LoginPage';
+import ActorListPage from '../ActorList/ActorListPage';
+import MovieListPage from '../MovieList/MovieListPage';
+import MovieDetailPage from '../MovieDetail/MovieDetailPage';
 
 export default function App() {
   const [user, setUser] = useState(null)
   return (
     <main className="App">
-      React Movies
+      { user ?
+        <>
+        <Routes>
+          <Route path="/actors" element={ <ActorListPage /> }/>
+          <Route path="/movies" element={ <MovieListPage /> }/>
+          <Route path="/movies/details" element={ <MovieDetailPage /> }/>
+        </Routes>
+        </>
+        :
+        <LoginPage />
+      }
     </main>
   );
 }
