@@ -1,0 +1,25 @@
+.actor-card {
+    background-color: #34363c;
+    color: white;
+    max-width: 15%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 1vmin;
+    padding: 0;
+    transition: 0.3s;
+    border-radius: 1vmin;
+}
+
+.actor-card img {
+    max-width: 100%;
+    border-top-left-radius: 1vmin;
+    border-top-right-radius: 1vmin;
+}
+
+.actor-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card-container {
+    padding: 2vmin;
+}

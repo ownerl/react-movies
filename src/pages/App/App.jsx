@@ -5,6 +5,7 @@ import LoginPage from "../Login/LoginPage";
 import ActorListPage from "../ActorList/ActorListPage";
 import MovieListPage from "../MovieList/MovieListPage";
 import MovieDetailPage from "../MovieDetail/MovieDetailPage";
+import ActorDetailPage from "../ActorDetail/ActorDetailPage";
 import NavBar from "../../components/NavBar/NavBar";
 
 export default function App() {
@@ -14,12 +15,16 @@ export default function App() {
             {user ? (
                 <>
                     <NavBar />
-                    <Routes>
+                    <Routes className="main-content">
                         <Route path="/actors" element={<ActorListPage />} />
                         <Route path="/movies" element={<MovieListPage />} />
                         <Route
                             path="/movies/:movieTitle"
                             element={<MovieDetailPage />}
+                        />
+                        <Route
+                            path="/actors/:actorName"
+                            element={<ActorDetailPage />}
                         />
                     </Routes>
                     <h1>Greetings {user}!</h1>

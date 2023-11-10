@@ -1,6 +1,7 @@
-.movie-card-list {
+.actor-card-list {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: stretch;
+    margin-top: 10vmin;
 }
