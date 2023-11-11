@@ -32,7 +32,7 @@ export const movies = [
         title: "Aquaman",
         cast: [
             "Jason Momoa",
-            "Amber Heard",
+            "Johnny Depp",
             "Patrick Wilson",
             "Nicole Kidman",
             "Willem Dafoe",
@@ -57,7 +57,7 @@ export const movies = [
         releaseDate: "2017-05-30",
         title: "Wonder Woman",
         cast: [
-            "Gal Gadot",
+            "Keanu Reeves",
             "Pedro Pascal",
             "Chris Pine",
             "Kristen Wiig",
@@ -88,6 +88,7 @@ export const movies = [
             "Henry Cavill",
             "Amy Adams",
             "Jesse Eisenberg",
+            "Robin Williams",
         ],
     },
     {
@@ -227,6 +228,7 @@ export const movies = [
         title: "Batman & Robin",
         cast: [
             "George Clooney",
+            "Michael Cera",
             "Chris O'Donnell",
             "Uma Thurman",
             "Alicia Silverstone",
